@@ -1,0 +1,48 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: 400;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: 'Abel', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.section h2 {
+    font-size: 24px;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.skills ul li {
+    margin: 5px 0;
+}
