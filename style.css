@@ -48,7 +48,6 @@ header h1 {
 }
 
 .icons {
-    display: flex;
     gap: 10px; /* Adjust the gap between icons as needed */
     justify-content: center;
     align-items: center;
