@@ -58,3 +58,9 @@ header h1 {
     text-decoration: none; /* Remove underline */
     color: black; /* Set link color as needed */
 }
+.circular-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* This creates a circular shape */
+    object-fit: cover;
+}
