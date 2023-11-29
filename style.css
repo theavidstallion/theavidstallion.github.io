@@ -72,6 +72,14 @@ header h1 {
       }
 }
 
+@media screen and (min-width: 768px) {
+/* For screens with a width of 768 pixels or more (e.g., larger phones) */
+.circular-image {
+    width: 120px;
+    height: 120px;
+      }
+}
+
 @media screen and (min-width: 1024px) {
 /* For screens with a width of 1024 pixels or more (e.g., PCs) */
 .circular-image {
