@@ -64,3 +64,18 @@ header h1 {
     border-radius: 50%; /* This creates a circular shape */
     object-fit: cover;
 }
+@media screen and (min-width: 600px) {
+/* For screens with a width of 600 pixels or more (e.g., tablets) */
+.circular-image {
+    width: 150px;
+    height: 150px;
+      }
+}
+
+@media screen and (min-width: 1024px) {
+/* For screens with a width of 1024 pixels or more (e.g., PCs) */
+.circular-image {
+    width: 200px;
+    height: 200px;
+      }
+}
