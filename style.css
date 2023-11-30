@@ -52,6 +52,7 @@ header h1 {
     gap: 10px;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .icons a {
@@ -90,4 +91,7 @@ header h1 {
 .call-to-action {
     text-align: center;
     font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+.section h2 {
+    text-align: center;
 }
