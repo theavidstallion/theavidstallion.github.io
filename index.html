@@ -1,65 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Farooq Ahmed</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="images/farooq-circled.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farooq Ahmed Khan - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">Farooq Ahmed</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="Farooq_Resume.pdf" target="_blank">Resume</a>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="#" class="logo">Farooq A.K.</a>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a class="nav-button" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-button" href="CV - Farooq.pdf" target="_blank">CV</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Hey, I'm <span>Farooq</span></h1>
-      <p>Final-year CS student exploring AI, IoT, Full‑Stack Development & Systems Thinking.</p>
-      <a href="portfolio.html" class="cta">See My Work</a>
-    </div>
-  </section>
+    <main>
+        <section id="about" class="hero">
+            <div class="container">
+                <div class="about-content">
+                    <h1>Hello, I'm Farooq Ahmed Khan</h1>
+                    <p>I’m a software engineer in training, passionate about building intelligent systems. With a strong foundation in Full Stack Development, AI/ML Engineering, and IoT/Embedded Systems, I enjoy bridging the gap between web applications and physical hardware. I believe in transforming powerful ideas into impactful solutions through well-executed technology.</p>
+                </div>
+            </div>
+        </section>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I’m a software engineer in training, passionate about building intelligent systems. With skills in Django, React, Python, and embedded systems, I bridge web and hardware. I believe in powerful ideas executed well.</p>
-  </section>
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Artificial Intelligence & Machine Learning</h3>
+                        <p>Data Preprocessing, Feature Engineering, Model Development (TensorFlow, PyTorch), Predictive Analytics, Computer Vision, Natural Language Processing.</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <p>Full Stack Development, Frontend Frameworks (React, Angular), Backend Frameworks (Django, Flask, PHP), API Integration (RESTful APIs, Webhooks), Responsive Design.</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data Analytics</h3>
+                        <p>Exploratory Data Analysis (EDA), Data Visualization (Tableau, Power BI, Matplotlib, Seaborn), Statistical Analysis, SQL (MySQL, PostgreSQL, BigQuery).</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>IoT & Embedded Systems</h3>
+                        <p>Microcontroller Programming (Arduino, Raspberry Pi, ESP), Sensor Integration, Digital Logic Design, Real-time Data Processing.</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps & Cloud Computing</h3>
+                        <p>Version Control (Git, GitHub, GitLab), CI/CD (GitHub Actions, Docker), Cloud Platforms (GCP, Azure).</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <p>Proficient in Python, C/C++, C#, and JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill">
-        <span>Full Stack (Django, React)</span>
-        <div class="bar"><div style="width: 85%"></div></div>
-      </div>
-      <div class="skill">
-        <span>AI / Data (Python, Tableau)</span>
-        <div class="bar"><div style="width: 70%"></div></div>
-      </div>
-      <div class="skill">
-        <span>IoT & Embedded (C/C++, Arduino)</span>
-        <div class="bar"><div style="width: 65%"></div></div>
-      </div>
-      <div class="skill">
-        <span>Databases & CI/CD</span>
-        <div class="bar"><div style="width: 60%"></div></div>
-      </div>
-    </div>
-  </section>
+        <section id="projects" class="projects-preview">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Health-monitoring system</h3>
+                        <p>Analyzes health metrics, predicts conditions, and supports early detection of health issues, all in real-time. Integrated messaging system, alerts & accounts. </p>
+                    </div>
+                    <div class="project-card">
+                        <h3>AI-powered HR application</h3>
+                        <p>Provides AI insights and assistance to Hiring Managers and candidates. </p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Android application analyzer</h3>
+                        <p>Filters out suspicious apps by analyzing different components with AI. </p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Real-estate price prediction app</h3>
+                        <p>Predicts prices of UK properties of different features and for different timelines. </p>
+                    </div>
+                </div>
+                <div class="more-projects">
+                    <a href="portfolio.html" class="button">Wanna see more -></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <footer>
-    <p>© 2025 Farooq Ahmed — <a href="mailto:mail@devfarooq.me">mail@devfarooq.me</a></p>
-    <div class="socials">
-      <a href="https://linkedin.com/in/theavidstallion" target="_blank">LinkedIn</a>
-      <a href="https://github.com/theavidstallion" target="_blank">GitHub</a>
-    </div>
-  </footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Farooq Ahmed Khan. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/theavidstallion" target="_blank">LinkedIn</a>
+                <a href="https://github.com/theavidstallion" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
