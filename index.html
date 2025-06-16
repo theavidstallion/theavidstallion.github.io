@@ -2,53 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farooq Ahmed - Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Farooq Ahmed</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="images/farooq-circled.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <img src="images/farooq.png" alt="Farooq Ahmed" class="profile-pic" />
-      <h1>Farooq Ahmed</h1>
-      <p class="tagline">Aspiring to be many things, that too: <strong>Mighty</strong>!</p>
-    </div>
-  </header>
-
-  <section class="about container">
-    <h2>About Me</h2>
-    <p>
-      I’m a final-year Computer Science student deeply interested in the intersection of <strong>Artificial Intelligence</strong>, <strong>Internet of Things</strong>, and <strong>Full Stack Software Development</strong>. Constantly exploring the edge of what's possible.
-    </p>
-  </section>
-
-  <section class="skills container">
-    <h2>Skillset</h2>
+  <nav class="sidebar">
+    <img src="images/farooq.png" alt="Farooq Ahmed" class="avatar"/>
     <ul>
-      <li><strong>Full Stack Web Development:</strong> Django, PHP, React ⭐⭐⭐⭐</li>
-      <li><strong>Data Analytics:</strong> Excel, Tableau, Power BI, MySQL, Python ⭐⭐⭐</li>
-      <li><strong>Programming:</strong> Python, C/C++ (OOP) ⭐⭐⭐</li>
-      <li><strong>Databases:</strong> MySQL, PostgreSQL, SQLite, MongoDB ⭐⭐⭐</li>
-      <li><strong>Git & GitHub:</strong> ⭐⭐⭐</li>
-      <li><strong>IoT & Embedded Systems:</strong> ⭐⭐⭐</li>
-      <li><strong>CI/CD:</strong> ⭐⭐</li>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </section>
+  </nav>
 
-  <section class="contact container">
-    <h2>Get in Touch!</h2>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/theavidstallion" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" /></a>
-      <a href="https://www.github.com/theavidstallion" target="_blank"><img src="images/github.png" alt="GitHub" /></a>
-      <a href="https://www.facebook.com/theavidstallion" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a>
-      <a href="mailto:mail@devfarooq.me"><img src="images/mail.png" alt="Email" /></a>
-    </div>
-  </section>
+  <main class="main-content">
+    <section id="hero" class="hero-split">
+      <div class="hero-text">
+        <h1>Hi, I’m <span>Farooq Ahmed</span></h1>
+        <p>Mighty aspirations meet code, AI & IoT exploration.</p>
+        <a href="portfolio.html" class="btn">View Portfolio</a>
+      </div>
+      <div class="hero-image">
+        <!-- optional SVG or placeholder -->
+      </div>
+    </section>
 
-  <footer class="footer">
-    <p>© 2025 Farooq Ahmed.</p>
-  </footer>
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <p>
+        Final-year Computer Science undergrad passionate about building SaaS solutions, diving into AI experiments, and crafting IoT prototypes. Always iterating, always learning.
+      </p>
+    </section>
+
+    <section id="skills" class="section skills">
+      <h2>My Skills</h2>
+      <div class="skill">
+        <label>Full‑Stack (Django, React)</label>
+        <div class="bar"><div style="width: 85%"></div></div>
+      </div>
+      <div class="skill">
+        <label>AI & Data (Python, Tableau)</label>
+        <div class="bar"><div style="width: 70%"></div></div>
+      </div>
+      <div class="skill">
+        <label>C/C++ & Embedded</label>
+        <div class="bar"><div style="width: 65%"></div></div>
+      </div>
+      <div class="skill">
+        <label>Databases & CI/CD</label>
+        <div class="bar"><div style="width: 60%"></div></bar>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Let’s Connect</h2>
+      <div class="social">
+        <a href="https://linkedin.com/in/theavidstallion" target="_blank">LinkedIn</a>
+        <a href="https://github.com/theavidstallion" target="_blank">GitHub</a>
+        <a href="mailto:mail@devfarooq.me">Email</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
