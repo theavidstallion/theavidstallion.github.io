@@ -2,70 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Farooq Ahmed</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="images/farooq-circled.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/farooq-circled.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <nav class="sidebar">
-    <img src="images/farooq.png" alt="Farooq Ahmed" class="avatar"/>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <div class="logo">Farooq Ahmed</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="Farooq_Resume.pdf" target="_blank">Resume</a>
+    </nav>
+  </header>
 
-  <main class="main-content">
-    <section id="hero" class="hero-split">
-      <div class="hero-text">
-        <h1>Hi, I’m <span>Farooq Ahmed</span></h1>
-        <p>Mighty aspirations meet code, AI & IoT exploration.</p>
-        <a href="portfolio.html" class="btn">View Portfolio</a>
-      </div>
-      <div class="hero-image">
-        <!-- optional SVG or placeholder -->
-      </div>
-    </section>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hey, I'm <span>Farooq</span></h1>
+      <p>Final-year CS student exploring AI, IoT, Full‑Stack Development & Systems Thinking.</p>
+      <a href="portfolio.html" class="cta">See My Work</a>
+    </div>
+  </section>
 
-    <section id="about" class="section about">
-      <h2>About Me</h2>
-      <p>
-        Final-year Computer Science undergrad passionate about building SaaS solutions, diving into AI experiments, and crafting IoT prototypes. Always iterating, always learning.
-      </p>
-    </section>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I’m a software engineer in training, passionate about building intelligent systems. With skills in Django, React, Python, and embedded systems, I bridge web and hardware. I believe in powerful ideas executed well.</p>
+  </section>
 
-    <section id="skills" class="section skills">
-      <h2>My Skills</h2>
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills">
       <div class="skill">
-        <label>Full‑Stack (Django, React)</label>
+        <span>Full Stack (Django, React)</span>
         <div class="bar"><div style="width: 85%"></div></div>
       </div>
       <div class="skill">
-        <label>AI & Data (Python, Tableau)</label>
+        <span>AI / Data (Python, Tableau)</span>
         <div class="bar"><div style="width: 70%"></div></div>
       </div>
       <div class="skill">
-        <label>C/C++ & Embedded</label>
+        <span>IoT & Embedded (C/C++, Arduino)</span>
         <div class="bar"><div style="width: 65%"></div></div>
       </div>
       <div class="skill">
-        <label>Databases & CI/CD</label>
-        <div class="bar"><div style="width: 60%"></div></bar>
+        <span>Databases & CI/CD</span>
+        <div class="bar"><div style="width: 60%"></div></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="section contact">
-      <h2>Let’s Connect</h2>
-      <div class="social">
-        <a href="https://linkedin.com/in/theavidstallion" target="_blank">LinkedIn</a>
-        <a href="https://github.com/theavidstallion" target="_blank">GitHub</a>
-        <a href="mailto:mail@devfarooq.me">Email</a>
-      </div>
-    </section>
-  </main>
+  <footer>
+    <p>© 2025 Farooq Ahmed — <a href="mailto:mail@devfarooq.me">mail@devfarooq.me</a></p>
+    <div class="socials">
+      <a href="https://linkedin.com/in/theavidstallion" target="_blank">LinkedIn</a>
+      <a href="https://github.com/theavidstallion" target="_blank">GitHub</a>
+    </div>
+  </footer>
 </body>
 </html>
