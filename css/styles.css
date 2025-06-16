@@ -1,153 +1,149 @@
-/* === Variables === */
 :root {
-  --bg: #fffdfa;
-  --text: #1e1e24;
-  --accent: #ffb703;
-  --accent-dark: #fb8500;
-  --muted: #f0f0f0;
+  --bg: #0f172a;
+  --text: #ffffff;
+  --muted: #1e293b;
+  --accent: #38bdf8;
+  --accent-dark: #0ea5e9;
   --font: 'Inter', sans-serif;
 }
 
-/* === Reset & Base === */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-  display: flex;
-  font-family: var(--font);
-  background: var(--bg);
-  color: var(--text);
-  min-height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* === Sidebar === */
-.sidebar {
-  width: 240px;
-  background: var(--muted);
-  padding: 2rem 1rem;
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--muted);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  height: 100vh;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
-.sidebar .avatar {
-  width: 100px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  border: 3px solid var(--accent);
+
+header .logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
 }
-.sidebar ul {
-  list-style: none;
+
+nav a {
+  color: var(--text);
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+nav a:hover::after {
   width: 100%;
 }
-.sidebar li + li { margin-top: 1rem; }
-.sidebar a {
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 600;
-  display: block;
-  padding: 0.5rem;
-  transition: background 0.3s;
-}
-.sidebar a:hover {
-  background: var(--accent);
-  color: white;
-  border-radius: 4px;
+
+/* Hero Section */
+.hero {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: linear-gradient(145deg, #0f172a, #1e293b);
 }
 
-/* === Main Content === */
-.main-content {
-  flex: 1;
-  overflow-x: hidden;
-}
-
-/* Hero Split */
-.hero-split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-  color: white;
-}
-.hero-text h1 {
-  font-size: 2.5rem;
+.hero h1 {
+  font-size: 3rem;
   margin-bottom: 0.5rem;
 }
-.hero-text h1 span {
-  border-bottom: 4px solid white;
+
+.hero h1 span {
+  color: var(--accent);
 }
-.hero-text p {
-  margin-bottom: 1.5rem;
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
   opacity: 0.9;
 }
-.btn {
-  background: white;
-  color: var(--accent-dark);
-  padding: 0.75rem 1.5rem;
+
+.cta {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: var(--accent);
+  color: var(--bg);
   text-decoration: none;
-  font-weight: 600;
-  border-radius: 4px;
+  font-weight: bold;
+  border-radius: 5px;
   transition: background 0.3s;
 }
-.btn:hover {
-  background: var(--muted);
+.cta:hover {
+  background-color: var(--accent-dark);
 }
 
 /* Sections */
 .section {
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: auto;
 }
 .section h2 {
   font-size: 2rem;
-  color: var(--accent-dark);
   margin-bottom: 1rem;
-}
-.section p {
-  max-width: 700px;
-  line-height: 1.6;
+  color: var(--accent);
 }
 
-/* Skills Bars */
+/* Skills */
 .skills .skill {
   margin-bottom: 1rem;
 }
-.skills label {
+.skills span {
   display: block;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
   font-weight: 600;
 }
-.skills .bar {
-  background: var(--muted);
+.bar {
+  background: #334155;
   border-radius: 4px;
+  height: 10px;
   overflow: hidden;
-  height: 12px;
 }
-.skills .bar > div {
+.bar div {
   height: 100%;
   background: var(--accent);
+  transition: width 0.5s ease;
 }
 
-/* Contact */
-.contact .social {
-  display: flex;
-  gap: 1.5rem;
-  margin-top: 1rem;
+/* Footer */
+footer {
+  background: var(--muted);
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+  border-top: 1px solid #1e293b;
 }
-.contact a {
+
+footer a {
+  color: var(--accent);
   text-decoration: none;
-  color: var(--accent-dark);
-  font-weight: 600;
-  position: relative;
 }
-.contact a::after {
-  content: '';
-  position: absolute;
-  left: 0; bottom: -3px;
-  width: 0; height: 2px;
-  background: var(--accent);
-  transition: width 0.3s;
+footer .socials {
+  margin-top: 0.5rem;
 }
-.contact a:hover::after {
-  width: 100%;
+footer .socials a {
+  margin: 0 1rem;
+  font-weight: 500;
 }
