@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farooq Ahmed - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="index.html" class="logo">Farooq A.</a>
+                <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a class="nav-button" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-button" href="CV - Farooq.pdf" target="_blank">CV</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="portfolio-content" class="portfolio-section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project-grid-full">
+                    <div class="project-card-full" data-project-id="health-monitoring">
+                        <img src="images/project-placeholders/health_monitoring_card.jpg" alt="Health Monitoring System" class="project-card-image">
+                        <h3>Health-monitoring system</h3>
+                        <p>Real-time analysis of health metrics...</p>
+                    </div>
+
+                    <div class="project-card-full" data-project-id="ai-hr">
+                        <img src="images/project-placeholders/ai_hr_card.jpg" alt="AI HR Application" class="project-card-image">
+                        <h3>AI-powered HR application</h3>
+                        <p>Assistance to Hiring Managers and candidates...</p>
+                    </div>
+
+                    <div class="project-card-full" data-project-id="android-analyzer">
+                        <img src="images/project-placeholders/android_analyzer_card.jpg" alt="Android App Analyzer" class="project-card-image">
+                        <h3>Android application analyzer</h3>
+                        <p>Filters out suspicious apps by analyzing components with AI...</p>
+                    </div>
+
+                    <div class="project-card-full" data-project-id="real-estate-prediction">
+                        <img src="images/project-placeholders/real_estate_card.jpg" alt="Real Estate Prediction App" class="project-card-image">
+                        <h3>Real-estate price prediction app</h3>
+                        <p>Predicts prices of UK properties...</p>
+                    </div>
+
+                    <div class="project-card-full" data-project-id="hospital-management">
+                        <img src="images/project-placeholders/hospital_management_card.jpg" alt="Hospital Management System" class="project-card-image">
+                        <h3>Hospital management system</h3>
+                        <p>Complete system including payment gateways...</p>
+                    </div>
+
+                    <div class="project-card-full" data-project-id="human-detector">
+                        <img src="images/project-placeholders/human_detector_card.jpg" alt="Human Detector App" class="project-card-image">
+                        <h3>Human-detector app</h3>
+                        <p>Detects and distinguishes humans from other things using AI...</p>
+                    </div>
+
+                    <div class="project-card-full" data-project-id="aerospace-app">
+                        <img src="images/project-placeholders/aerospace_app_card.jpg" alt="Aerospace App" class="project-card-image">
+                        <h3>Aerospace app</h3>
+                        <p>Satellite trajectory analysis GUI using Python...</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-header">
+                <h3 id="modal-project-title"></h3>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image-gallery" id="modal-image-gallery">
+                    </div>
+                <p id="modal-project-description"></p>
+                <h4>Technologies Used:</h4>
+                <p id="modal-project-components"></p>
+                <div id="modal-project-links" class="project-links">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Farooq Ahmed. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/theavidstallion" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/theavidstallion" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+                <a href="https://www.facebook.com/your-facebook-profile" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="mailto:mail@devfarooq.me"><img src="images/mail.png" alt="Email"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="application/json" id="projectData">
+    [
+        {
+            "id": "health-monitoring",
+            "title": "Health-Monitoring System",
+            "description": "A real-time health monitoring system that analyzes various health metrics from IoT sensors, applies predictive analytics (AI/ML) to anticipate potential conditions, and provides early detection of health issues. It integrates a web application for user interaction, a messaging system for alerts, and robust account management. The system is designed to provide actionable insights for proactive health management.",
+            "components": "IoT Sensors, Python, C/C++, Arduino, Raspberry Pi, ESP, AI/ML (TensorFlow, Scikit-Learn, Keras), Data Analytics, Web Application (Frontend: React/Angular, Backend: Django/Flask), Databases (SQL), Cloud Integration (GCP/Azure).",
+            "card_image": "images/project-placeholders/health_monitoring_card.jpg",
+            "gallery_images": [
+                "images/project-gallery/health_monitoring_1.jpg",
+                "images/project-gallery/health_monitoring_2.jpg",
+                "images/project-gallery/health_monitoring_3.jpg"
+            ],
+            "github_link": "https://github.com/theavidstallion/health-monitoring-system",
+            "live_link": null
+        },
+        {
+            "id": "ai-hr",
+            "title": "AI-powered HR Application",
+            "description": "An intelligent HR application designed to provide AI insights and assistance to both Hiring Managers and candidates. It automates resume vetting and filtration processes, significantly reducing manual workload and enhancing accuracy. The system helps in streamlining HR record management and improving efficiency.",
+            "components": "AI/ML (Natural Language Processing, Scikit-Learn, Pandas), Python, Web Application (Frontend: React, Backend: Django/Flask), Databases, Automation Scripts.",
+            "card_image": "images/project-placeholders/ai_hr_card.jpg",
+            "gallery_images": [
+                "images/project-gallery/ai_hr_1.jpg",
+                "images/project-gallery/ai_hr_2.jpg"
+            ],
+            "github_link": "https://github.com/theavidstallion/ai-hr-application",
+            "live_link": null
+        },
+        {
+            "id": "android-analyzer",
+            "title": "Android Application Analyzer",
+            "description": "This application filters out suspicious Android apps by analyzing their various components with AI. It leverages machine learning techniques to identify potentially malicious behaviors or unusual permissions, enhancing mobile security.",
+            "components": "AI/ML (Scikit-Learn, TensorFlow), Python, Data Analytics, Android Development Concepts.",
+            "card_image": "images/project-placeholders/android_analyzer_card.jpg",
+            "gallery_images": [
+                "images/project-gallery/android_analyzer_1.jpg",
+                "images/project-gallery/android_analyzer_2.jpg"
+            ],
+            "github_link": "https://github.com/theavidstallion/android-analyzer",
+            "live_link": null
+        },
+        {
+            "id": "real-estate-prediction",
+            "title": "Real-Estate Price Prediction App",
+            "description": "A web application that predicts the prices of UK properties based on various features and for different timelines. It utilizes machine learning models trained on real estate data to provide accurate predictions, assisting buyers and sellers in making informed decisions.",
+            "components": "AI/ML (Scikit-Learn, Pandas, NumPy), Python, Web Application (Frontend: React/JavaScript, Backend: Flask/Django), Data Analytics, Data Visualization.",
+            "card_image": "images/project-placeholders/real_estate_card.jpg",
+            "gallery_images": [
+                "images/project-gallery/real_estate_1.jpg",
+                "images/project-gallery/real_estate_2.jpg"
+            ],
+            "github_link": "https://github.com/theavidstallion/real-estate-prediction",
+            "live_link": null
+        },
+        {
+            "id": "hospital-management",
+            "title": "Hospital Management System",
+            "description": "A comprehensive hospital management system designed to streamline various hospital operations. It includes features for patient management, appointment scheduling, billing with integrated payment gateways, and multiple user roles (doctors, staff, patients).",
+            "components": "Full Stack Development (e.g., Python/Django/Flask, HTML, CSS, JavaScript), Databases (SQL), Payment Gateway Integration.",
+            "card_image": "images/project-placeholders/hospital_management_card.jpg",
+            "gallery_images": [
+                "images/project-gallery/hospital_management_1.jpg",
+                "images/project-gallery/hospital_management_2.jpg"
+            ],
+            "github_link": "https://github.com/theavidstallion/hospital-management-system",
+            "live_link": null
+        },
+        {
+            "id": "human-detector",
+            "title": "Human-Detector App",
+            "description": "An application that uses Artificial Intelligence to detect and distinguish humans from other objects in an environment. This could be applied in various fields like security, surveillance, or even automated systems requiring human presence detection.",
+            "components": "AI/ML (Computer Vision, OpenCV, TensorFlow/PyTorch), Python.",
+            "card_image": "images/project-placeholders/human_detector_card.jpg",
+            "gallery_images": [
+                "images/project-gallery/human_detector_1.jpg",
+                "images/project-gallery/human_detector_2.jpg"
+            ],
+            "github_link": "https://github.com/theavidstallion/human-detector-app",
+            "live_link": null
+        },
+        {
+            "id": "aerospace-app",
+            "title": "Aerospace App",
+            "description": "A GUI-based application developed using Python for satellite trajectory analysis. This tool allows for visualization and analysis of satellite paths and orbital mechanics, useful for aerospace engineering and related studies.",
+            "components": "Python, GUI Framework (e.g., PyQt, Tkinter), Mathematical Libraries (NumPy).",
+            "card_image": "images/project-placeholders/aerospace_app_card.jpg",
+            "gallery_images": [
+                "images/project-gallery/aerospace_app_1.jpg",
+                "images/project-gallery/aerospace_app_2.jpg"
+            ],
+            "github_link": "https://github.com/theavidstallion/aerospace-app",
+            "live_link": null
+        }
+    ]
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
