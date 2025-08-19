@@ -439,6 +439,93 @@ section p:last-child {
   color: var(--accent);
 }
 
+/* Other Projects Section */
+.other-projects {
+  margin: 80px 0 60px 0;
+  padding: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.other-projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  margin-top: 32px;
+}
+
+.project-category {
+  background: linear-gradient(145deg, rgba(15,23,36,0.6), rgba(11,18,32,0.6));
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.project-category:hover {
+  transform: translateY(-2px);
+  border-color: rgba(52, 211, 153, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-category h3 {
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-category h3::before {
+  content: "🚀";
+  font-size: 18px;
+}
+
+.project-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-category li {
+  margin-bottom: 16px;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.6;
+  color: #cbd8e6;
+}
+
+.project-category li::before {
+  content: "▪";
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 16px;
+}
+
+.project-category li:last-child {
+  margin-bottom: 0;
+}
+
+.project-category strong {
+  color: var(--accent2);
+  font-weight: 600;
+}
+
 /* About Page */
 .about-content {
   max-width: 1100px;
@@ -1046,6 +1133,38 @@ section p:last-child {
   }
   
   .proj-card p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* Other Projects Mobile Styles */
+  .other-projects {
+    margin: 50px 0 40px 0;
+    padding: 30px 0;
+  }
+  
+  .other-projects h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  
+  .projects-list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .project-category {
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .project-category h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .project-category li {
+    margin-bottom: 12px;
     font-size: 14px;
     line-height: 1.6;
   }
